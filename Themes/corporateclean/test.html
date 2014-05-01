@@ -1,0 +1,258 @@
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none;"><div id="cboxWrapper" style=""><div style=""><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden;"></div><div id="cboxLoadingOverlay" class="" style=""></div><div id="cboxLoadingGraphic" class="" style=""></div><div id="cboxTitle" class="" style=""></div><div id="cboxCurrent" class="" style=""></div><div id="cboxNext" class="" style=""></div><div id="cboxPrevious" class="" style=""></div><div id="cboxSlideshow" class="" style=""></div><div id="cboxClose" class="" style=""></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="cboxOverlay" style="opacity: 1; cursor: auto; display: none;"></div><div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none; position: absolute; width: 800px; height: 0px; top: 399px; left: 373px; opacity: 1; cursor: auto;"><div id="cboxWrapper" style="height: 0px; width: 800px;"><div style=""><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left; width: 800px;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left; height: 0px;"></div><div id="cboxContent" style="float: left; width: 800px; height: 0px;"><div id="cboxLoadingOverlay" class="" style="height: 0px; display: none;"></div><div id="cboxLoadingGraphic" class="" style="height: 0px; display: none;"></div><div id="cboxTitle" class="" style="display: block;"></div><div id="cboxCurrent" class="" style="display: none;"></div><div id="cboxNext" class="" style="display: none;"></div><div id="cboxPrevious" class="" style="display: none;"></div><div id="cboxSlideshow" class="" style="display: none;"></div><div id="cboxClose" class="" style="">close</div></div><div id="cboxMiddleRight" style="float: left; height: 0px;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left; width: 800px;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="padding-bottom: 0px; padding-right: 0px; display: none;"><div id="cboxWrapper" style=""><div style=""><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" class="" style="width: 0px; height: 0px; overflow: hidden;"></div><div id="cboxLoadingOverlay" class="" style=""></div><div id="cboxLoadingGraphic" class="" style=""></div><div id="cboxTitle" class="" style=""></div><div id="cboxCurrent" class="" style=""></div><div id="cboxNext" class="" style=""></div><div id="cboxPrevious" class="" style=""></div><div id="cboxSlideshow" class="" style=""></div><div id="cboxClose" class="" style=""></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div>
+
+<link media="screen" rel="stylesheet" href="sites/default/themes/corporateclean/colorbox.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+</script><script src="/sites/default/themes/corporateclean/js/jquery.colorbox.js"></script><script>
+<!--//--><![CDATA[// ><!--
+
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			$("a[rel='example1']").colorbox();
+			$("a[rel='example2']").colorbox({transition:"fade"});
+			$("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
+			$("a[rel='example4']").colorbox({slideshow:true});
+			$(".example5").colorbox();
+			$(".example6").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+			$(".example7").colorbox({width:"800px", height:"80%", iframe:true});
+			$(".example8").colorbox({width:"800px", inline:true, href:"#inline_example1"});
+			$(".example10").colorbox({width:"800px", inline:true, href:"#inline_example2"});
+			$(".example11").colorbox({width:"800px", inline:true, href:"#inline_example3"});
+			$(".example12").colorbox({width:"800px", inline:true, href:"#inline_example4"});
+			$(".example13").colorbox({width:"800px", inline:true, href:"#inline_example5"});
+			$(".example14").colorbox({width:"800px", inline:true, href:"#inline_example6"});
+			$(".example15").colorbox({width:"800px", inline:true, href:"#inline_example7"});
+			$(".example16").colorbox({width:"800px", inline:true, href:"#inline_example8"});
+
+			$(".example9").colorbox({
+				onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+				onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+				onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+				onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+				onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+			});
+			
+			//Example of preserving a JavaScript event for inline calls.
+			$("#click").click(function(){ 
+				$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+				return false;
+			});
+		});
+	
+//--><!]]>
+</script><div class="page-wrap">
+<div class="outside">
+<div class="inside">
+<!-- Begin content area --><div class="content2">
+<!-- Page Name --><h3>Tools</h3><p>The following tools are available through the CC Informatics Group:  </p>
+<table class="table4col"><tbody><tr><th>
+			<span><a href="#clinicalInformaticsTools">Clinical Informatics</a></span>
+			</th>
+<th>
+			<span><a href="#clinicalTrialsDataManagement">Clinical Trials <br>Data Management</a></span>
+			</th>
+<th>
+			<span><a href="#patientRegistries">Patient Registries</a></span>
+			</th>
+<th>	<span><a href="#molecularData">Molecular Data</a></span>
+			</th>
+</tr><tr><td>
+<ul class="list"><li><a href="#tool1">Lab Checker</a></li>
+<li><a href="#emerse">EMERSE</a></li>
+<li><a href="#pubMedQuest">PubMed Quest</a></li>
+<!--	<li><a href="#tool3">Tool 3</a></li> --></ul></td>
+<td>
+<ul class="list"><li><a href="#velos">Velos</a></li>
+</ul></td>
+<td>
+<ul class="list"><li><a href="#CancerRegistryi2b2">Cancer Registry/i2B2</a></li>
+<li><a href="#registryCafe">Registry CaFE</a></li>
+</ul></td>
+<td>
+<ul class="list"><li><a href="#conceptGen">Concept Gen</a></li>
+<li><a href="#LRPathTools">LR PathTools</a></li>
+<li><a href="http://portal.ncibi.org/gateway/tryourtools.html">More tools at NCIBI</a></li>
+</ul></td>
+</tr></tbody></table><div class="clear"></div>
+<div class="lineTop"></div>
+<h4 id="clinicalInformaticsTools"> Clinical Informatics Tools </h4>
+<div class="line"></div>
+<div class="list_right_col">
+<div id="tool1">
+<h5>Lab Checker</h5>
+<p>
+			<a class="example8 cboxElement" href="#inline_example1"><img src="/sites/default/files/pictures/labCheckerEmailOutput.png" width="138px" class="floatRightClear"></a></p>
+<p>			Automatically checks labs for a set of study patients, and e-mails the results to the<br>
+			study team daily, avoiding the need to log in to CareWeb each day and manually check for<br>
+			new results.<br><span><a class="example8 cboxElement" href="#inline_example1"><b>View More</b></a></span><br><span>Contact:<a href="mailto:hanauer@med.umich.edu">Dr. Hanauer</a></span></p></div></div>
+<div class="list_left_col"><div id="emerse"><a href="https://emerse.med.umich.edu/"><h5>EMERSE</h5></a><p><a class="example10 cboxElement" href="#inline_example2"><img src="/sites/default/files/pictures/emerse.png" width="138px" class="floatRightClear"><br></a></p>
+<p>			EMERSE (Electronic Medical Record Search Engine) is an intuitive, powerful search engine<br>
+			for documents in the electronic medical record (CareWeb) including dictated and typed reports<br>
+			(progress notes, radiology and patholgoy reports, etc).<br><span><a class="example10 cboxElement" href="#inline_example2"><b>View More</b></a></span><br></p>
+<!--	<span>Contact:</span> -->
+</div>
+<div style="display:none">
+<div id="inline_example2" style="padding:10px; background:#fff;">
+<p><strong>EMERSE Information &amp; Image</strong></p>
+<p>
+			<img src="/sites/default/files/pictures/emerse.png" width="400px" class="floatRightClear"><br>
+EMERSE offers multiple options for creating complex search queries yet has an interface that is easy enough to be used by those with minimal computer experience. EMERSE is ideal for retrospective chart reviews, data abstraction, recruitment, and translational research. It is also used for quality improvement and hospital operations.  In operation since 2005, EMERSE has been used for hundreds of research studies.<br><br><br><span>Link: </span><a href="https://emerse.med.umich.edu/">https://emerse.med.umich.edu/</a></p>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="list_left_col" id="pubMedQuest">
+	<a href="http://bioinformatics.cancer.med.umich.edu/tools/pubmed/index.html"><br><h5>PubMed QUEST <br>(Query Search Tool)</h5>
+<p></p></a>
+<p>
+	<a class="example14 cboxElement" href="#inline_example6"><img src="/sites/default/files/pictures/pubmedQuest.png" width="138px" class="floatRightClear"></a></p>
+<p>	The PubMed Query Search Tool is an example of one of the strengths of the bioinformatics core--namely, its ability to create custom computer programs to meet the needs of the Cancer Center.<br><span><a class="example14 cboxElement" href="#inline_example6"><b>View More</b></a></span>
+	</p>
+</div>
+<div style="display:none">
+<div id="inline_example6" style="padding:10px; background:#fff;">
+<h5>PubMed QUEST </h5>
+<p>
+		<img src="/sites/default/files/pictures/pubmedQuest.png" width="450px" class="floatRightClear"><br>
+		PubMed QUEST allows users to search PubMed for publications based on authors and journal<br>
+		names. What makes this tool so powerful is the ability to provide a list of authors and journals all at once and have the program search them all with one button click. The results are sent via e-mail and can easily be copied and pasted into programs such as Microsoft Word.<br><br></p>
+<div class="clear"></div>
+<p><span>Link: <a href="http://bioinformatics.cancer.med.umich.edu/tools/pubmed/index.html">http://bioinformatics.cancer.med.umich.edu/tools/pubmed/index.html</a></span></p>
+</div>
+</div>
+<div class="clear"></div>
+<!--service 1--><div class="lineTop"></div>
+<h4 id="clinicalTrialsDataManagement">Clinical Trials Data Management Tools</h4><div class="list_left_col"><div id="velos"><a href="http://www.veloseresearch.com/eres/jsp/index.html"><h5>Velos</h5>
+<p></p></a>
+<p>
+			<a class="example13 cboxElement" href="#inline_example5"><img src="/sites/default/files/pictures/velos.png" width="138px" class="floatRightClear"></a></p>
+<p>Velos is a commercial application recently purchased by the University of Michigan to serve as an institutional database resource for researchers.<br><br><span><a class="example13 cboxElement" href="#inline_example5"><b>View More</b></a> </span></p>
+</div>
+</div>
+
+<div style="display:none">
+		<div id="inline_example5" style="padding:10px; background:#fff;">
+		<p><strong>Velos</strong></p>
+		<p>
+		<img src="./images/velos.png" width="400px" class="floatRightClear">
+		Velos is a commercial application recently purchased by the University of Michigan to serve as an institutional database resource for researchers. 
+Initial stakeholders include the Cancer Center, Center for the Advancement of Clinical Research, 
+and Radiation Oncology. This system will be replacing the home-grown BioDBx system. The Velos team of U of Michigan is currently working to deploy Velos and ensure that the infrastructure for supporting the system is set up. They are concurrently supporting those who have data on BioDBx until the time is right to migrate the data to Velos and sunset the BioDBx system.
+<br>
+<span>Link: </span><a href="http://www.veloseresearch.com/eres/jsp/index.html">http://www.veloseresearch.com/eres/jsp/index.html</a>
+		</p>		
+		</div>
+	</div>
+</div>
+
+<div class="list_right_col"></div>
+<div class="clear"></div>
+
+<div class="lineTop"></div>
+<h4 id="patientRegistries">Patient Registries</h4>
+<div class="line"></div>
+
+<!--service 1--><div class="list_right_col">
+<div id="registryCafe">
+<h5>Registry CaFE</h5>
+<p>			The Registry CaFE (Case Finding Engine) was created to automatically search through pathology reports and determine which reports are cancer related.<br><br><span><a class="example12 cboxElement" href="#inline_example4"><b>View More</b></a></span>
+		</p>
+</div>
+<div style="display:none">
+<div id="inline_example4" style="padding:10px; background:#fff;">
+<p><strong>Registry CaFEInformation &amp; Image</strong></p>
+<p>The CaFE was designed for the cancer registry team in order to achieve faster and more accurate case finding by automating the case identification process for the registrars. This tool uses a large collection of terminology to help it identify even rare cancers. It is also able to distinguish, with fairly good accuracy, between ambiguous terminology. For example "ca" can be an abbreviation for both "calcium" and "cancer". This tool can potentially be modified with custom search lists to aid in marking up any type of text to help identify cases of interest for abstracters or those performing a chart review.<br><br></p>
+</div>
+</div>
+</div>
+
+<div class="list_left_col">
+<div id="CancerRegistryi2b2">
+			<a href="http://www.med.umich.edu/i/cancer/cancerregistry.htm">
+<h5>Cancer Registry/i2b2</h5></a><p><a class="example11 cboxElement" href="#inline_example3"><img src="/sites/default/files/pictures/i2b2_image.PNG" width="138px" class="floatRightClear"><br></a></p>
+<p>The Informatics Core provides informatics solutions to assist the registry<br>
+in the collection of accurate data and are working to make it available to<br>
+researchers via the i2b2 query interface. <br><br><span><a class="example11 cboxElement" href="#inline_example3"><b>View More</b></a></span></p>
+</div>
+<div style="display:none">
+<div id="inline_example3" style="padding:10px; background:#fff;">
+<p><strong>Cancer Registry </strong></p>
+<p>
+		<img src="/sites/default/files/pictures/i2b2_image.PNG" width="450px" class="floatRightClear"><br>
+		The UMCCC maintains a comprehensive<br>
+registry of all patients treated at the University of Michigan. The Informatics Core provides<br>
+support to ensure accurate and comprehensive collection of data on these patients including diagnosis,<br>
+stage, and treatment. Data are available with IRB approval. Additionally, we are working to make<br>
+the data available for de-identified cohort discovery through the CTSA-funded i2b2 Workbench query<br>
+tool, a joint effort with MICHR and MCIT. With this tool users can identify cohorts of patients by<br>
+choosing from various categories including diagnosis, stage, labs, demographics, and other elements.<br><br></p>
+</div>
+</div>
+</div>
+
+<div class="clear"></div>
+<div class="lineTop"></div>
+<h4 id="molecularData">Molecular Data Tools</h4>
+<p>For additional molecular data tools, please visit: <a href="http://portal.ncibi.org/gateway/">http://portal.ncibi.org/gateway/</a></p>
+<div class="line"></div>
+
+<div class="list_right_col">
+<div id="LRPathTools">
+<h5>LR Path Tools</h5>
+<p>			LRpath performs gene set enrichment testing, an approach used to test for predefined biologically-relevant gene sets that contain more significant genes from an experimental dataset than expected by chance.<br><br><span><a class="example16 cboxElement" href="#inline_example8"><b>View More</b></a><br><br><span>Contact:<a href="mailto:cavalcol@med.umich.edu">Dr. Cavalcoli</a></span></span></p></div></div><div class="list_left_col" id="conceptGen"><a href="http://conceptgen.ncibi.org/core/conceptGen/index.jsp"><h5>Concept Gen</h5>
+<p></p></a>
+<p><a class="example15 cboxElement" href="#inline_example7"><img src="/sites/default/files/pictures/conceptGen.png" width="138px" class="floatRightClear"></a><br>
+	Find biomedical concepts enriched for a list of genes or associations between concepts based onoverlapping genes.<br></p>
+<p>	<span><a class="example15 cboxElement" href="#inline_example7"><b>View More</b></a></span><br></p>
+<!-- Contact:-->
+<div style="display:none">
+<div id="inline_example7" style="padding:10px; background:#fff;">
+<p><strong>Concept Gen</strong></p>
+<p><img src="/sites/default/files/pictures/conceptGen.png" width="450px" class="floatRightClear"><br>
+		ConceptGen is an open-source gene set enrichment testing and concept mapping tool.<br>
+		This web-based tool can be used both to identify biological gene sets (called concepts)<br>
+		enriched with differentially expressed genes (or any other user-identified gene list), and<br>
+		to explore networks of relationships among biological concepts from diverse biological sources.<br>
+		You can either upload a list of human Entrez Gene IDs or gene symbols with or without a<br>
+		background gene set, or query from among the pre-built concepts. You also have the option<br>
+		of using the compound converter tool to convert one or more compounds/metabolites to their<br>
+		associated enzymes for upload.
+</p>
+<p>
+		Using a private account, you can identify associations among multiple user-uploaded gene<br>
+		sets. From the Explorer results page, you can export enrichment results to a spreadsheet,<br>
+		explore relationships with the network graph view, and use the heatmap view to visualize<br>
+		the relationships among a large number of genes and concepts. You can also link to concept<br>
+		data sources, MiMI gene pages, and MiMI interactions network view.
+</p>
+<p>
+		ConceptGen integrates data from diverse biological sources to form the following current<br>
+		list of 14 concept types: GO biological process, GO molecular function, GO cellular<br>
+		component, KEGG pathway, Biocarta pathway, Panther pathway, Drug Bank, Transfac, MiRBase,<br>
+		OMIM, pFAM, Gene Expression, Protein interactions (MiMI), and MeSH. The database currently<br>
+		consists of ~18,000 concepts, each with 5 or more assigned genes. Gene expression concepts<br>
+		were derived from public Affymetrix data downloaded from NCBI's gene expression omnibus<br>
+		(GEO) and analyzed using RMA normalization and an empirical Bayes testing method with our<br>
+		custom-built analysis pipeline.<br><br></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div style="display:none">
+<div id="inline_example4" style="padding:10px; background:#fff;">
+<p><strong>Registry CaFE</strong></p>
+<p>The CaFE was designed for the cancer registry team in order to achieve faster and more accurate case finding by automating the case identification process for the registrars. This tool uses a large collection of terminology to help it identify even rare cancers. It is also able to distinguish, with fairly good accuracy, between ambiguous terminology. For example "ca" can be an abbreviation for both "calcium" and "cancer". This tool can potentially be modified with custom search lists to aid in marking up any type of text to help identify cases of interest for abstracters or those performing a chart review.<br><br></p>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<!-- End of Content Area --></div>
+<div class="clear"></div>
+</div>
+
+  
+
+  
